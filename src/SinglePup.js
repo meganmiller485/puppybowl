@@ -14,9 +14,10 @@ const SinglePup = (props) => {
             <p>Team: {selectedPlayer.team ? selectedPlayer.team.name : 'Unassigned'}</p>
             <p>Breed: {selectedPlayer.breed}</p>
             <img src={selectedPlayer.imageUrl}  />
-            <button id="see-all" >Back to all players</button>
+            <button id="see-all" onClick = {() => setPlayerList(setPlayerList({}))}>Back to all players</button>
         </div>
     );
 };
 
 export default SinglePup;
+
